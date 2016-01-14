@@ -1,0 +1,311 @@
+
+body, html {
+  height: 100%;
+  margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+
+
+	 
+/*#sidetitle{
+	width: 550px;
+	height: 23px;
+	font-family: 'Arimo', sans-serif;
+	letter-spacing:1px;	
+    margin: auto;
+  	top: 0; left: -850px; bottom: 0; right: 0;	
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	position: fixed;
+	text-transform: uppercase;	
+}*/
+	 
+#title{
+	width: 750px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-top: 150px;
+	font-family: 'Arimo', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+	
+}
+
+#abstract{
+	width: 800px;
+	margin-top: 100px;
+	margin-right:auto;
+    margin-left: auto;	
+    margin-bottom: 80px;	
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+}
+
+#introduction{
+	width: 800px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+}
+
+#influence{
+	width: 800px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+}
+
+#archAndType{
+	width: 800px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+}
+
+#column1{
+	width: 350px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+	float: left;
+}
+#column2{
+	width: 350px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 16px;
+	letter-spacing:1px;
+	line-height: 16pt;
+	float: left;
+}
+
+.captions{
+	width: 250px;
+	margin-top: 150px;
+	margin-left: 110px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	position: absolute;
+	letter-spacing:1px;
+	font-size: 10px;
+	line-height: 10pt;
+}
+
+.captioncolumn1{
+	width: 250px;
+	margin-top: 167px;
+	margin-left: 110px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	position: absolute;
+	letter-spacing:1px;
+	font-size: 10px;
+	line-height: 10pt;
+}
+
+.captioncolumn2{
+	width: 280px;
+	margin-top: 167px;
+	margin-left: 280px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	position: absolute;
+	letter-spacing:1px;
+	font-size: 10px;
+	line-height: 10pt;
+}
+
+#footnote{
+	width: 700px;
+	margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+	font-family: 'Pontano+Sans', sans-serif;	
+	font-size: 14px;
+	letter-spacing:1px;
+	line-height: 14pt;
+	
+}
+
+
+.menu{
+font-family: 'Pontano+Sans', sans-serif;	
+position: relative;
+top: 15px;
+text-align: left;
+left: 25px;
+width: 100%;
+font-size: 75px;
+line-height: 75pt;
+letter-spacing: 0.04em;
+padding-left: 15px;
+background: #ffffff;
+}
+
+.footer{
+font-family: 'Pontano+Sans', sans-serif;	
+position: fixed;
+bottom: 15px;
+text-align: right;
+right: 15px;
+width: 250px;
+font-size: 10px;
+line-height: 10pt;
+letter-spacing: 0.04em;
+padding-left: 15px;
+}
+
+	.insertedImage1 { 
+		width: 250px;
+		height: 302px;
+		margin-left: auto;	
+		margin-right: auto;	
+		margin-top: 25px;	
+		margin-bottom: 25px;
+		background-image: url("images/1.jpg");
+		background-repeat: no-repeat;
+		position: related;
+		cursor: pointer;
+		
+	 }
+	 
+	 
+	 
+	 .insertImage2 { 
+		width: 220px;
+		height: 300px;
+		margin-top: 25px;	
+		margin-bottom: 25px;
+		background-image: url("http://kabk.github.io/govt-theses-16-john-van-der-meule/images/Braque_fruit.jpg");
+		background-repeat: no-repeat;
+		position: related;
+		
+	 }
+	 
+	  .insertImage3 { 
+		width: 398px;
+		height: 300px;
+		margin-left: -70px;	
+		margin-top: 25px;	
+		margin-bottom: 25px;
+		background-image: url("http://kabk.github.io/govt-theses-16-john-van-der-meule/images/Picasso_chair.jpg");
+		background-repeat: no-repeat;
+		position: related;
+		
+	 }
+
+
+
+	
+u2 { border-bottom: solid 2px #00ffcc;
+	
+ }
+
+P { 
+	text-indent: 30px;
+	 }
+	 
+
+
+h1 {
+	font-size: 30px;
+	line-height: 28pt;
+
+	letter-spacing:1px;
+	text-align: center;
+
+}
+
+h2 {
+	font-size: 80px;
+	line-height: 68pt;
+	font-weight: normal;
+	letter-spacing:1px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 16px;
+	width: 600px;
+	margin-left: auto;	
+	margin-right: auto;	
+	line-height: 18pt;
+	font-weight: bold;
+	letter-spacing:1px;
+	text-align: center;
+}
+
+sup { 
+    line-height: 10pt;
+    font-size: smaller;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #001eff;
+    text-decoration: none;
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+/* selected link */
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+::-moz-selection {
+    background-color: #00ffcc;
+    color: #000;
+}
+ 
+::selection {
+    background-color: #00ffcc;
+    color: #000;
+}
