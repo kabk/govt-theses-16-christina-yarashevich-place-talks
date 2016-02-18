@@ -3,15 +3,21 @@
                 <head>
                 
                 <link rel="stylesheet" type="text/css" href="style.css">
-                <link rel="stylesheet" href="normalize.css">
+                <link rel="stylesheet" type="text/css" href="printbg.css" media="print" />
+
+
+
 <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-                
+<link href='https://fonts.googleapis.com/css?family=Montserrat:700|Orbitron|Hammersmith+One|Doppio+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat|Orbitron:700|Hammersmith+One|Doppio+One' rel='stylesheet' type='text/css'>
+
 				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+        <script src="js/showhidden.js" type="text/javascript" charset="utf-8"></script>
 				
-				<script src="../jquery.custom-scrollbar.js"></script>
-    			<link type="text/css" rel="stylesheet" href="../jquery.custom-scrollbar.css"/>
+				
 				 
 
 <script type="text/javascript">
@@ -57,31 +63,42 @@ $(document).ready(function(){
                     
                 </head>
                 
-                <body>
+<body>
 
-<div id="container">
+<div id="containerMenu">
 
-                  <a name="menu0"></a>
-                <div class="menu">
-<a href="#menu0" name="m0">Homepage</a><br>
-<a href="#menu1" name="m1">Abstract</a><br>
-<a href="#menu2" name="m2">Introduction</a><br>
-<a href="#menu3" name="m3">Influence of space</a><br>
-<a href="#menu4" name="m4">Architecture and typography</a><br>
-        </div>
+<a name="menu0"></a>
+    <div class="menu">
+<a href="#menu0" name="m0">Place Talks</a><br>
+<a href="#menu1" name="m1"><space>Abstract</space></a><br>
+<a href="#menu2" name="m2"><space>Introduction</space></a><br>
+<a href="#menu3" name="m3"><chapMenu>Chapter 1</chapMenu>Architecture and perception</a><br>
+<a href="#menu4" name="m4"><chapMenu>Chapter 2</chapMenu>Architectural specifications</a><br>
+<a href="#menu5" name="m5"><chapMenu>Chapter 3</chapMenu>Typography and identity</a><br>
+<a href="#menu6" name="m6"><chapMenu>Chapter 4</chapMenu>The role of typography</a><br>
+<a href="#menu7" name="m7"><chapMenu>Chapter 5</chapMenu>History and categorization</a><br>
+<a href="#menu8" name="m8"><chapMenu>Chapter 6</chapMenu>Directional typography</a><br>
+<a href="#menu9" name="m9"><chapMenu>Chapter 7</chapMenu>Supergraphics</a><br>
+<a href="#menu10" name="m10"><space>Conclusion</space></a><br>
+<a href="#menu11" name="m11"><space>Footnotes</space></a><br>
 
-  <header> <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
+    </div>
+</div>
+
+
+
+        <!--<header> <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
                       The only difference is that through their name, they indicate their function,
                       so it helps in structuring the code -->
                  <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
               
-              <div id="headerimg">
+             <!-- <div id="headerimg">
                 <img src="images/cover_web.PNG" alt="">
                </div>                          
-        </header>
+        </header>-->
         
   
-</div>
+
 
 
 
@@ -89,49 +106,56 @@ $(document).ready(function(){
 
                 
 
-<div id="multicover">
-<div id="title" onclick="selectText('title')">
 
-<h2>PLACE<Br>TALKS</h2>
-<h3>Changing perception with typography</h3></a>
-</div>
-
-
-
-<div id="sidetitle">
-
-</div>
 
 
 
 <div id="abstract">
 
 <div ><a name="menu1"><h1>Abstract</h1></a></div>
-<p>Men cannot live without interaction with the world around them.
+<p>Men cannot 
+
+  <a href="javascript:unhide('without');" class="click">
+  live </a>
+
+<span class="hidden" id="without">
+          <span class="right"> without interaction with the world around them.
 All actions, feelings and thoughts of a person, are conditioned by
 the surrounding he lives in. Fundamentally human communicate
 with the universe or nature through his living environment. In these
 modern times, when more than a half of the world’s population
 lives in urban areas, build environment becomes significantly more
-important in the formation of our world view.</p>
+important in the formation of our world view.</span>
 
-<!--<div class="insertedImage1"><div class="captions">onderschirft van deze afbeelding kan extra lang worden, maar hoe lng precies want je wilt niet dat hij boven je afbeelding uit steigt, maar eerder naar de 2e regel valt</div></div>-->
 
-<p>Architecture is the most direct way through which a human is
+  <a href="javascript:unhide('architecture');" class="click">
+  &#8680;</a>
+
+  <span class="hidden" id="architecture">
+   <span class="left">Architecture is the most direct way through which a human is
 connected with the world around him. On a daily basis it affects
 the subconsciousness of people and plays a role in the creation of
 their personalities. This is something, architecture has in common
 with graphic design. Graphic design is constantly presented in our
 surroundings. As architecture, it also builds aesthetic conditions
-and models of human behavior in everyday life.</p>
+and models of human behavior in everyday life.
 
-<p>It could be argued that the visual, aesthetic and cultural identity
+It could be argued that the visual, aesthetic and cultural identity
 of the build environment is made up of, amongst other things,
 by its graphical elements. Typography is one of the fields in graphic
 design which has a significant presence in the built environment.
 Words are getting noticed almost immediately. They communicate
 information to people and directly affect people’s consciousness.
-This is what makes typography so influential.</p>
+This is what makes typography so influential.</span>
+
+
+
+</span>
+
+
+
+<!--<div class="insertedImage1"><div class="captions">onderschirft van deze afbeelding kan extra lang worden, maar hoe lng precies want je wilt niet dat hij boven je afbeelding uit steigt, maar eerder naar de 2e regel valt</div></div>-->
+
 
 <p>My thesis introduces the research question: <br>
 <b>How does typography influence the spatial experience of people in the public space? </b><br>
