@@ -63,11 +63,18 @@ font-size: 100%;
 #abstract{
 	
 	width: 80%;
+<<<<<<< HEAD
 	position: relative;
 	/*margin-top: 30vh;
 	margin-right:auto;
     margin-left: auto;	
     margin-bottom: 80px;*/	
+=======
+	margin-top: 40vw;
+	margin-right:auto;
+    margin-left: auto;	
+    margin-bottom: 80px;	
+>>>>>>> origin/gh-pages
 	font-family: 'Montserrat', sans-serif;	
 	font-size: 2vw;
 	letter-spacing:1px;
@@ -347,6 +354,7 @@ border-bottom-color: #ffffff;
 }*/
 
 
+<<<<<<< HEAD
 a.one:link {
     color: #ffffff;
     text-decoration: none;
@@ -357,11 +365,19 @@ a.one:link {
 	border-bottom-color: #ffffff;
 }
 
+=======
+>>>>>>> origin/gh-pages
 a:link {
     color: #ffffff;
     text-decoration: none;
     margin-right:0vw;
+<<<<<<< HEAD
     
+=======
+    border-bottom-style: solid;
+border-bottom-width: 0.3vw;
+border-bottom-color: #ffffff;
+>>>>>>> origin/gh-pages
 }
 
 
@@ -433,6 +449,7 @@ a:active {
 	border-width: 0px 0px 1px 1px;
 	border-color: #ffffff;
 	margin-left:0vw;
+<<<<<<< HEAD
 }
 
 #underline{
@@ -440,4 +457,8 @@ text-decoration: none;
 background: url(images/underline.gif) repeat-x 100% 100%;
 padding-bottom: 4px;
 white-space: nowrap;
+=======
+	
+
+>>>>>>> origin/gh-pages
 }
