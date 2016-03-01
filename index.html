@@ -1,277 +1,511 @@
 <!DOCTYPE html>
-            <html>
-                <head>
-                
-                <link rel="stylesheet" type="text/css" href="style.css">
-                <link rel="stylesheet" href="normalize.css">
-<link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-                
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
-				
-				<script src="../jquery.custom-scrollbar.js"></script>
-    			<link type="text/css" rel="stylesheet" href="../jquery.custom-scrollbar.css"/>
-				 
+<html>
+<head>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/printbg.css" media="print" />
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700|Orbitron|Hammersmith+One|Doppio+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Orbitron:700|Hammersmith+One|Doppio+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+
+
+
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+  <script src="js/showhidden.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('a[href*=#]').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+        var $target = $(this.hash);
       $target = $target.length && $target
       || $('[name=' + this.hash.slice(1) +']');
       if ($target.length) {
         var targetOffset = $target.offset().top;
         $('html,body')
         .animate({scrollTop: targetOffset}, 750);
-       return false;
+        return false;
       }
     }
   });
-});
-</script>
+  });
 
-
-
-
-
-                    <meta charset="utf-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>Place talks</title>
-
-                    <meta name="TITLE" content="PLACE TALKS" />
-                    <meta name="description" content="Thesis from fourth-year graphic design student at The Royal Academy of Art, KABK, The Hague." />
-
-                    <meta property="og:title" content="PLACE TALKS" />
-                    <meta property="og:description" content="How to express 3D space in the browser? Scrolling in the different directions? Down/right/up/left" />
-                    <meta property="og:image" content="http://kabk.github.io/govt-theses-16-christina-yarashevich-title/images/Place_talks.jpg"/>
-                    <meta property="og:author" content="Christina Yarashevich" />
-
-                    <meta property="dc:creator" content="Christina Yarashevich" />
-                    <meta property="dc:created" content="2015-12-05T00:00:00Z">
-                    <meta property="dc:modified" content="2015-12-05T00:00:00Z">
-
-                    <meta property="twitter:site" content="@nrc">
-                    
-                </head>
-                
-                <body>
-
-<div id="container">
-
-                  <a name="menu0"></a>
-                <div class="menu">
-<a href="#menu0" name="m0">Homepage</a><br>
-<a href="#menu1" name="m1">Abstract</a><br>
-<a href="#menu2" name="m2">Introduction</a><br>
-<a href="#menu3" name="m3">Influence of space</a><br>
-<a href="#menu4" name="m4">Architecture and typography</a><br>
-        </div>
-
-  <header> <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
-                      The only difference is that through their name, they indicate their function,
-                      so it helps in structuring the code -->
-                 <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
-              
-              <div id="headerimg">
-                <img src="images/cover_web.PNG" alt="">
-               </div>                          
-        </header>
-        
   
+
+  $(document).ready(function(){
+    $(".navclick").click(function(){
+      $(".nav").slideToggle(700);
+    });
+  });
+
+
+  </script>
+
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Place talks</title>
+
+  <meta name="TITLE" content="PLACE TALKS" />
+  <meta name="description" content="Thesis from fourth-year graphic design student at The Royal Academy of Art, KABK, The Hague." />
+
+  <meta property="og:title" content="PLACE TALKS" />
+  <meta property="og:description" content="How to express 3D space in the browser? Scrolling in the different directions? Down/right/up/left" />
+  <meta property="og:image" content="http://kabk.github.io/govt-theses-16-christina-yarashevich-title/images/Place_talks.jpg"/>
+  <meta property="og:author" content="Christina Yarashevich" />
+
+  <meta property="dc:creator" content="Christina Yarashevich" />
+  <meta property="dc:created" content="2015-12-05T00:00:00Z">
+  <meta property="dc:modified" content="2015-12-05T00:00:00Z">
+
+  <meta property="twitter:site" content="@nrc">
+
+</head>
+
+<body>
+
+  <div class="navclick">
+    <a >MENU</a>
+  </div>
+
+
+  <div class="nav">
+
+    <div class="menuSmall">
+
+       
+
+      <a href="#menuSmall13">About</a><br>
+      <a href="#menuSmall1">Abstract</a><br>
+      <a href="#menuSmall2">Introduction</a><br>
+      <a href="#menuSmall3">Chapter 1 </br>Architecture and perception</a><br>
+      <a href="#menuSmall4">Chapter 2 </br>Architectural specifications</a><br>
+      <a href="#menuSmall5">Chapter 3 </br>Typography and identity</a><br>
+      <a href="#menuSmall6">Chapter 4 </br>The role of typography</a><br>
+      <a href="#menuSmall7">Chapter 5 </br>History and categorization</a><br>
+      <a href="#menuSmall8">Chapter 6 </br>Supergraphics</a><br>
+      <a href="#menuSmall9">Chapter 7 </br>Directional typography</a><br>
+      <a href="#menuSmall10">Chapter 8 </br>Conclusion</a><br>
+      <a href="#menuSmall11">Footnotes</a><br>
+      <a href="#menuSmall12">Acknowledgement</a><br>
+
+    </div>  
+  </div> 
+
+
+
+
+  <div class ="Name"> <a href="#menu0" name="m0">Place Talks</a>
+    <span class="myName">Christina Yarashevich</span>
+  </div>
+
+
+
+
+  <div id="containerMenu">
+
+    <a name="menu0"></a>
+    <div class="menu">
+
+      <a href="#menu1" name="m1" ><space>Abstract</space></a><br>
+      <a href="#menu2" name="m2" ><space>Introduction</space></a><br>
+      <chapMenu>Chapter 1</chapMenu><a href="#menu3" name="m3" >Architecture<br><space>and perception</space></a><br>
+      <chapMenu>Chapter 2</chapMenu><a href="#menu4" name="m4" >Architectural<br><space>specifications</space></a><br>
+      <chapMenu>Chapter 3</chapMenu><a href="#menu5" name="m5">Typography<br><space>and identity</space></a><br>
+      <chapMenu>Chapter 4</chapMenu><a href="#menu6" name="m6">The role of<br><space>typography</space></a><br>
+      <chapMenu>Chapter 5</chapMenu><a href="#menu7" name="m7">History and<br><space>categorization</space></a><br>
+      <chapMenu>Chapter 6</chapMenu><a href="#menu8" name="m8">Supergraphics</a><br>
+      <chapMenu>Chapter 7</chapMenu><a href="#menu9" name="m9">Directional<br><space>typography</space></a><br>
+      <chapMenu>Chapter 8</chapMenu><a href="#menu10" name="m10">Conclusion</a><br>
+      <a href="#menu11" name="m11"><space>Footnotes</space></a><br>
+
+    </div>
+  </div>
+
+
+
+<div name="menu1" id="menuSmall1" class="nameChapter">Abstract</div>
+  <div class="chapterSSS" id="abstract">
+
+    
+
+    
+
+      <p class="columnLeft" >
+        <a href="javascript:unhide('man');" class="LinkInText" class="click" >
+        <span>Man </span></a> <span class="hidden" id="man">
+          <span>cannot live without without an amount of interaction 
+            with the world around them. All actions, feelings and thoughts of a person, are conditioned by
+            the surrounding he lives in. Fundamentally human communicate
+            with the universe or nature through his living environment. In these
+            modern times, when more than a half of the world’s population
+            lives in urban areas, build environment becomes significantly more
+            important in the formation of our world view.</span></span></br></p>
+
+        <p class="columnRight" >
+          <a href="javascript:unhide('arch');" class="LinkInText" class="click" >
+            <span>Architecture </span></a> <span class="hidden" id="arch">
+            <span>is the most direct way through
+             which a human is connected with the world around him. On a daily basis it affects the 
+             sub consciousness of people and plays a role in the creation of their personalities. 
+             This is something architecture has in common with graphic design. </span></span>
+            </p>
+
+
+        <p class="columnCenter">
+          <a href="javascript:unhide('typography');" class="LinkInText" class="click">
+              <span>Typography</span></a> <span class="hidden" id="typography">
+               <span>is one of the fieldsin graphic design which has a significant presence in 
+                the build environment. Words are getting noticed almost immediately. They communicate 
+                information to people and directly affect people’s consciousness. Typography mediates 
+                information and language in the urban environment, and gives an identity to an impersonal 
+                architectural setting. Additionally, it creates a new scene for human interaction.
+                This is what makes typography so influential.</span></span>
+                </p>
+
+            <!--  <a href="javascript:unhide('picture');" class="click">
+                <p>My </br></a>
+
+                  <span class="hidden" id="picture" >
+                    <img src="images/Paula_Scher_theater.JPG" alt="Paula_Scher_theater" class="image"></span><br></p>-->
+
+
+
+        <p class="columnLeft">
+           <a href="javascript:unhide('question');" class="LinkInText" class="click">
+            <span style ="line-height: 7vw">research question <span></a></br>
+            <span class="hidden" id="question">
+            <span class="columnCenter"> <span class="quote">How does typography influence</br>the spatial experience of people</br>in the public space? 
+            </span></span><br>
+        </p>
+
+        <p class="columnRight">
+          <a href="javascript:unhide('I');" class="LinkInText" class="click">
+          I </a> <span class="hidden" id="I">
+          researched the field of typography, architecture and environmental psychology in order to answer this question.
+
+          <span class="otherParagraphs">
+          The text investigates and establishes the link between typography and architecture. It provides historical and contemporary examples of the usage of lettering in architectural space. Which was done to emphasize the deep roots 
+          of coexistence of these two fields of art. Additionally, it describes the features and possibilities of typography within the architectural environment.
+          </span>
+
+          <span class="otherParagraphs">
+          The research demonstrates the relationship between human state, behavior and their physical environment. 
+          Therefore it introduces the necessary theoretical background of environmental psychology. 
+          </span>
+
+          <span class="otherParagraphs">
+          This thesis is meant to explain and illustrate an important role of typography in the creation of suitable living conditions for humans. 
+          </span>
+
+
+          </span>
 </div>
 
 
 
-        
 
-                
+<div name="menu2" id="menuSmall2" class="nameChapter">Introduction</div>
+ <div class="chapterSSS" id="introduction">
 
-<div id="multicover">
-<div id="title" onclick="selectText('title')">
+  <span class="columnCenter"> <span class="quote">Enlarged letters in space look like wrested strokes from books. 
+    As a remains from somebody’s message. 
+  City speaks to you. When you see such an instance in the space the perception of the place changes. 
+  The whole atmosphere became more intimate. It is like never ending conversation with somebody, 
+  whose replicas you can find everywhere. Or conversation with the place itself.</span></span>
 
-<h2>PLACE<Br>TALKS</h2>
-<h3>Changing perception with typography</h3></a>
-</div>
-
-
-
-<div id="sidetitle">
-
-</div>
+  <span class="columnRight"> <span class="quote">The evolution of society goes hand in hand with the evolution 
+    of its habitat. Patrik Schumacher </span></span>
 
 
 
-<div id="abstract">
+    <p class="columnLeft">
+          <a href="javascript:unhide('Intro1');" class="LinkInText" class="click">
+          <span style ="line-height: 7vw">Graphic</br>designers </span></a> <span class="hidden" id="Intro1">
 
-<div ><a name="menu1"><h1>Abstract</h1></a></div>
-<p>Men cannot live without interaction with the world around them.
-All actions, feelings and thoughts of a person, are conditioned by
-the surrounding he lives in. Fundamentally human communicate
-with the universe or nature through his living environment. In these
-modern times, when more than a half of the world’s population
-lives in urban areas, build environment becomes significantly more
-important in the formation of our world view.</p>
+      </br>insist on a crucial role of graphic design in the modern realities. We have been taught about the importance of critical thinking within our profession. Nowadays the graphic designer should be socially engaged and responsible for own decisions, not only as professionals but also as citizens. 
 
-<!--<div class="insertedImage1"><div class="captions">onderschirft van deze afbeelding kan extra lang worden, maar hoe lng precies want je wilt niet dat hij boven je afbeelding uit steigt, maar eerder naar de 2e regel valt</div></div>-->
+      <span class="otherParagraphs">This is a great attitude towards graphic design. It helps to realize the importance of your own actions and choices as a graphic designer. Nevertheless, these are loud statements, but the language with which graphic design speaks is more quite. Using instruments of graphic design you mainly influence the subconscious of people. Not everyone is aware that he or she has made a certain choice or decision based on subconscious aesthetic preferences, which the designer was able to skillfully appeal.
+      </span>
 
-<p>Architecture is the most direct way through which a human is
-connected with the world around him. On a daily basis it affects
-the subconsciousness of people and plays a role in the creation of
-their personalities. This is something, architecture has in common
-with graphic design. Graphic design is constantly presented in our
-surroundings. As architecture, it also builds aesthetic conditions
-and models of human behavior in everyday life.</p>
+      <span class="otherParagraphs"> This is the strength of graphic design. It can influence and educate unnoticeably by a nonprofessional viewer. That is the reason I am convinced that the power of design is not in the revolutionary slogans, but in the opportunity to affect human consciousness and to form aesthetic values. You cannot change the world with the poster in one day, but with your work you can build certain aesthetic surroundings for human existence, which will influence and educate their worldview. Nowadays</span>
 
-<p>It could be argued that the visual, aesthetic and cultural identity
-of the build environment is made up of, amongst other things,
-by its graphical elements. Typography is one of the fields in graphic
-design which has a significant presence in the built environment.
-Words are getting noticed almost immediately. They communicate
-information to people and directly affect people’s consciousness.
-This is what makes typography so influential.</p>
-
-<p>My thesis introduces the research question: <br>
-<b>How does typography influence the spatial experience of people in the public space? </b><br>
-In order to answer this question, I researched the field of typography, architecture and environmental psychology.</p>
-
-<p>The text investigates and establishes the link between typography
-and architecture. It provides historical and contemporary examples
-of the usage of lettering in architectural space. Which was done
-to emphasize the deep roots of coexistence of these two field of
-arts. Additionally, with this instances it describes the features and
-possibilities of typography within the architectural environment.</p>
-
-<p>The research demonstrates the relationship between humans state,
-behavior and their physical environment. Therefore it introduces the
-necessary theoretical background of environmental psychology.
-This thesis is meant to explain and illustrate an important role of
-typography in the creation of suitable living conditions for humans.
-</p>
-
-</div>
-
-<div id="introduction">
-<div ><a name="menu2"><h1>Introduction</h1></a></div>
-
-<p>Graphic designers insist on crucial role of graphic design in the modern realities.
-We have been taught about importance of critical thinking within our profession.
-That nowadays graphic designer should be socially engaged and be responsible
-for your own decisions not only as professionals but also as a citizens.  </p>
-
-<p>This is a great attitude towards the graphic design. It helps to realize the importance
-of your own actions and choices as a graphic designer. Nevertheless, this is loud
-statements, but the language with which graphic design speaks is more quite.
-Using instruments of graphic design you mostly influence the subconscious
-of people. Not everyone is aware that he/she has made a certain choice or decision
-based on subconscious aesthetic preferences, which the designer was able
-to skillfully appeal.</p>
-
-<p> This is the strength of graphic design. It can influence and educate unnoticeably
-by nonprofessional viewer. That is the reason I convinced that the power of design
-is not in the revolutionary slogans, but in the opportunity to affect human
-consciousness and to form aesthetic values. You cannot change the world with the
-poster, but you can build such aesthetic conditions and models of human behavior
-in everyday life, which will influence and educate their worldview.</p>
-
-<p>In this thesis, I want to consider the impact of built environment on humans.
-Nowadays the urban (build) environment become the main surroundings for humanity.
-It has the most influencial power to shape people’s views. There is the important
-relationship between man and his visual environment. That is the reason why this
-research investigate the link between architecture and graphic design. Graphic design
-and architecture have coexisted in the built environment for centuries.<!--<a href="#fn2" name="fr2"><sup>2</sup></a></p>-->
-
-<p>It could be argued that the visual, aesthetic and cultural identity of the build
-environment is made up of, amongst other things, its graphical elements. Typography
-in the urban environment can thus be studied as part of place’s identity. Therefore
-I see a potential and the necessity of rethinking the role of typography within the
-urban environment.</p>
-
-<p>The following thesis introduces the research question: How does typography
-influence the spatial experience of people in the public spaces?
-The research covers the study of the environment psychology which establishes the
-relationship between human behavior and conditions and their physical environment.
-However, mainly the thesis describe the features and possibilities of typography
-within the architectural environment.</p><Br>
+      <!--<span class="otherParagraphs">Nowadays</span></p>-->
 
 
-<div id="influence">
-<div ><a name="menu3"><h1>Influence of space</h1></a></div>
+    <p class="columnCenter">  
+     <a href="javascript:unhide('Intro2');" class="LinkInText" class="click">
+     <span style ="line-height: 7vw">the built environment </br></span> </a><span class="hidden" id="Intro2">
+     becomes the main surroundings for humanity. It has the most influential power to shape people’s views. There is an important relationship between man and his visual surroundings. In this thesis, I want to consider the impact of built environment on humans and what role graphic design plays in it. It could be argued that the visual, aesthetic and cultural identity of the build environment is made up of, amongst other things, its graphical elements. More specifically, I want to consider the role of typography in the construction of experience of space. Typography in the architectural environment can thus be studied as part of a place’s identity. That is the reason why this research investigates the link between architecture and typography.</span></p>
+     
 
-<p>Man could not live without interaction with the world around. All actions, feelings
-and thoughts of person conditioned by the surrounding he lives in. Fundamentally
-human communicate with universe or nature through his living environment. In
-the modern times when more than a half of world’s population lives in urban areas
-build environment become significantly important in formation of human’s life
-conditions.</p>
 
-<p>Architecture is the most direct way through which human connected with the
-world around. By operating of two main architectural ingredients – mass and
-space –architect makes a statement about the interrelationship of man and his
-universe. The abstract and indefinable notion of cosmos is always somehow present and represent in architecture and the human landscape. Landscapes and
-buildings are thus condensed worlds – microcosmic representations – and, consequently, the space built for human habitation is always also metaphorical space.
-(UA) Architecture in this sense is never just a provider of the shelter but more
-importantly it forms and expresses man’s ideology.</p>
+    <p class="columnLeft">  
+     <a href="javascript:unhide('Intro3');" class="LinkInText" class="click">
+      The thesis </a><span class="hidden" id="Intro3">
+      is going to elaborate on the typographical presence of linguistic units in the built environment. The research is mainly illustrated by examples of typographical interventions from Western English-speaking countries. These restrictions applied due to linguistic barrier and inability to look closer at the examples with different linguistic background. However, value of typography described in this thesis can be applied in different cultural settings.
 
-<p>Historical examples of architectural constructions from various cultures illustrate
-a different attitude towards the world around. Egyptian, Chinese, Islamic, Christian buildings manifests completely different cultural and philosophical ideas.
-Architecture in these cases become a horn of cultural expression.
-But the process of expression ideology never works in one way. It is always a bilateral process. To the extent the architecture express world views, it is also affect
-it. People settle into the space, and the space dwells in people; architecture becomes part of them and they become part of it. A profound work of architecture
-does not remain outside us as a separate object; people live and experience themselves through the work, and it guides, direct and conditions the way they understand themselves to be in the world. This tension between architecture being
-defined by what people can perceived and what people can perceived being continually redefined by the architecture we imagine, is fundamental to understanding architecture as experience. (UndArch).
-Venetian philosopher Giambattista Vico said “Verum Ipsum Factum”, which mean
-that “we can only know what human beings have made”. The surroundings that
-people build for themselves shapes them through their experience of it, changing
-the future even as it stands as the most telling record of the present in which it
-was made. (UA)
-Since mass and space are equally important to the architectural task of creation
-living environment for people, the way architecture approach the space plays an
-essential role. It becomes not merely a medium of guiding behavior, it is also an
-intentional means of mental and artistic communication, and an object of aesthetic articulation. People grasp the space through their senses and measure it
-with their bodies and movements. Space become an extension of people’s bodies
-beyond their skin, and the physical space and the mental spaces fuse with each
-other. Architectural space mediates between the world at large and the human
-domain, the physical and the mental, the material and the spiritual. (UA)
-Environmental psychologist Harold Proshansky declare that place identity has
-been traditionally defined as a sub-structure of the self-identity of the person. He
-described the incorporation of place identity into the concept of individual’s self
-4
-and emphasized significance of places for their inhabitants and users.</p>
+      <span class="otherParagraphs">In the first chapter the influence of architecture on the psychological state of people and
+      the formation of personal identity is investigated. The second chapter describes the current architectural frame in which typography might operate. The third chapter illustrates the importance of typography in the creation of place identity. In the fourth and the fifth chapter we take a closer look on the specification and categorization of typography. It also introduces a possibility to distinguish a specific kind of typography in the built environment, such as expressive typography. Additionally, this research covers the study of Supergraphics as an important historical instance. The last chapter emphasizes the difference between expressive typography and other types. It also elaborates on an opportunity to apply accrued knowledge about expressive typography in different contexts of usage in space.</span>
+
+      <span class="otherParagraphs">The research covers the study of the environment psychology which establishes the relationship between human behavior and conditions and their physical environment. However, the thesis mainly stresses the importance and possibilities of typography within the architectural environment.</span>
+      </span></p>
+
+  </div>
+
+
+<div name="menu3" id="menuSmall3" class="nameChapter">Architecture and perseption</div>
+   <div class="chapterSSS" id="chapter1">
+    <p class="columnLeft">
+      <a href="javascript:unhide('chapterOne1');" class="LinkInText" class="click">
+    Architecture </a> <span class="hidden" id="chapterOne1">
+    <span>is the most direct way through which humans are connected with the world around them. Mass and space are two main architectural ingredients.  An architect operates them and by that makes a statement about the interrelationship of man with his universe. The abstract and indefinable notion of cosmos is always somehow present and represented in architecture and the human landscape. Landscapes and buildings are thus condensed worlds – microcosmic representations – and, consequently, the space built for human habitation is also, always, a metaphorical space.  As philosopher Karsten Harries argues, “Chaos must be transformed into cosmos. When we reduce the human need for shelter to a material need, we lose sight of what we can call the ethical function of architecture.”
+    <!--  <a href="#fn1" name="fr1"><sup>1</sup></a></p> -->
+    <a href="javascript:unhide('source1');"class="click"><sup>1</sup></a>
+    <span class="hidden" id="source1"><span class="source">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span>
+    Architecture in this sense is never just a provider of shelter, but, more importantly, it forms and expresses man’s ideology.
+    </span>
+
+    <span class="otherParagraphs">Historical examples of architectural constructions from various cultures illustrate a different attitude towards the world around. Egyptian, Chinese, Islamic, and Christian buildings manifest completely different cultural and philosophical ideas. Architecture in these cases becomes a horn of cultural expression.</span>
+
+    <span class="otherParagraphs">But the process of expression of cultural constructions never works one way. It is always a bilateral process. To a certain extent the architecture expresses world views, it also affects them. People settle into the space, and the space dwells in people; architecture becomes part of them and they become part of it. A profound work of architecture does not remain outside us as a separate object; people live and experience themselves through the work, and it guides, directs and conditions the way they understand themselves to exist in the world. This tension between architecture being defined by what people can perceive and what people can perceive by being continually redefined by the architecture they imagine, is fundamental to understanding architecture as experience.
+      <a href="javascript:unhide('source2');"class="click"><sup>2</sup></a>
+    <span class="hidden" id="source2"><span class="source">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span>
+
+    Venetian philosopher Giambattista Vico said “Verum Ipsum Factum”, which means that “we can only know what human beings have made”. The surroundings that people build for themselves shapes them through their experience of it, changing the future even as it stands as the most telling record of the present in which it was made.
+      <a href="javascript:unhide('source3');"class="click"><sup>3</sup></a>
+    <span class="hidden" id="source3"><span class="source">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span></span>
+    </span>
+    </p>
+
+
+    <p class="columnCenter">
+      <a href="javascript:unhide('chapterOne2');" class="LinkInText" class="click">
+        <span style ="line-height: 7vw">Cognitive mapping </span></a> </br>
+        <span class="hidden" id="chapterOne2">
+        <span>is the concept developed by Fredric Jameson. He took the term from Kevin Lynch´s The Image of the City. In this work, Lynch wrote about the importance of man’s ability ‘to map (in their minds) their own positions or the urban totality in which they find themselves’. In other words, it describes the phenomenon by which people make sense of their urban surroundings. It can be understood as a transitional area between the personal and social. It allows people to function more effectively in the urban spaces through which they move.</span>
+
+
+        <span class="otherParagraphs">Jameson elaborated the theory of cognitive perception and made it into a metaphor for the model of how we might begin to articulate the local and the global. This model provides a way of linking the most intimately local – our particular path through the world – and the most global – the crucial features of our political planet.
+          <a href="javascript:unhide('source4');"class="click"><sup>4</sup></a>
+    <span class="hidden" id="source4"><span class="source">Colin MacCabe: Preface. In: F. Jameson: The Geopolitical Aesthetic. Cinema and Space in the World System. London 1995</span></span>
+        He saw a crucial link between the existential features (the position of the individual subject, the experience of daily life, the monadic “point of view” on the world) and vast and properly unpresentable totality which is the ensemble of society’s structures as a whole.
+        <a href="javascript:unhide('source5');"class="click"><sup>5</sup></a>
+    <span class="hidden" id="source5"><span class="source">Postmodernism, or, The Cultural Logic of Late Capitalism. Frederic Jameson</span></span>
+        According to Jameson this is exactly the goal of cognitive mapping in the framework of daily life in the physical city.
+        </span>
+      </span>
+    </p>
+
+    <p class="columnRight">
+      <a href="javascript:unhide('chapterOne3');" class="LinkInText" class="click">
+    Space </a> <span class="hidden" id="chapterOne3">
+    <span>and mass are equally important to the architectural task of creating a living environment for people. Consequently, the way architecture approaches the space plays an essential role. It becomes, not merely a medium of guiding behavior, it is also an intentional means of mental and artistic communication, and an object of aesthetic articulation. People grasp the space through their senses and measure it with their bodies and movements. Space becomes an extension of people’s bodies beyond their skin, and the physical space and the mental spaces fuse. Architectural space mediates between the world at large and the human domain, the physical and the mental, the material and the spiritual.
+      <a href="javascript:unhide('source6');"class="click"><sup>6</sup></a>
+    <span class="hidden" id="source6"><span class="source">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span></span>
+
+    <span class="otherParagraphs">Environmental psychologist Harold Proshansky declares that place identity has been traditionally defined as a sub-structure of the self-identity of the person. He described the incorporation of place identity into the concept of individual’s self and emphasized significance of places for their inhabitants and users.</span>
+
+    <span class="otherParagraphs">Erik. H. Erikson, psychoanalyst and educator, developed the concept of the extension of the room of interplay which he related to the life circle. He introduces the idea of “forbidding environment” in contrast to “facilitating environment,” and showed how the balance between these two may affect one’s response to the various turning points in one’s life, strengthening or inhibiting the full realization of one’s potential.
+      <a href="javascript:unhide('source7');"class="click"><sup>7</sup></a>
+    <span class="hidden" id="source7"><span class="source">Design of Cities. Edmund N.Bacon. Thames and Hudson. Revised Edition 1967</span></span>
+
+     Erikson saw the important dependence between formation of personality in the different stages of life and the surroundings.
+      <a href="javascript:unhide('image1');"class="click"><span id="rectangle">image</span></br></a>
+      <span class="hidden" id="image1">
+
+      <!--<img src="images/Paula_Scher_theater.JPG" alt="Paula_Scher_theater" class="imageRight">-->
+
+      <span><img src='images/(19)Image_19_Barbara_Kruger_Whitney_on_site.JPG' alt="Paula_Scher_theater" class="imageRight" onmouseover="this.src='images/(19)Image_19_Barbara_Kruger_Whitney_on_site.JPG';" onmouseout="this.src='images/(19)Image_19_Barbara_Kruger_Whitney_on_site.JPG';" />
+
+
+      <span class="caption">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span></span></span>
+
+    <span class="otherParagraphs">The physical settings influence the way people feel themselves within the space. When a person interacts with various places in life, he/she can evaluate and make his or her own assumption about an ideal satisfying perception of the place. All experience connected with places forms the environmental past of person. But individuals very often stay unconscious of the array of feelings, values or memories of a specific place and simply becomes more comfortable or uncomfortable with certain physical settings, or prefer specific spaces to others. However, as architect Gordon Cullen once wrote “Environment we consider pleasant did not just happen by chance”.</span>
+    </p>
+
+    <p class="columnLeft">
+      <a href="javascript:unhide('chapterOne4');" class="LinkInText" class="click">
+    <span style ="line-height: 7vw">A positive environment </span> </br></a> 
+    <span class="hidden" id="chapterOne4">
+    <span>is not only important for a psychological statement of one separate person, but can affect the state of sociological situations in general. The pedagogical and didactic function of art must not be ignored. According to the poet Joseph Brodsky, “Be like me” is the moral command of a work of art in general. Well-thought-out places are able to facilitate positive transformation of the community in general. Viennese philosopher Ludwig Wittgenstein said “Ethics and aesthetics are one”. </span>
+
+    <span class="otherParagraphs">Viewed in this light, the role of the designer acquires an important dimension. It is not to create facades or architectural mass but to create settings for a totally harmonious life experience. Architecture is the articulation of space so as to produce a definite space experience in relation to previous and anticipated space experiences. It should create conditions for a satisfying state of human and community.</span>
+    </span>
+    </p>
 
 </div>
 
-<div id="archAndType">
-<div ><a name="menu4"><h1>Architecture and typography<br></h1></a></div>
 
-<p>Graphic design by its nature is not meant to provide fundamental living structures.
-Graphic designers do not build world around by means of bricks and concrete, but
-they provide the space with the unique layer of visual information. Using typography, colour, light and other different means of expression graphic design can form
-specific atmosphere of the space.
-Build settings have meaning, and matter to people only when it is experienced,
-when all human’s senses are simultaneously engaged in its inhabitation, and when
-it provides conditions in which the acts and rituals of daily life takes place. Graphic design is able to contribute to the creation of place identity on a par with architecture.
-Place identity which is so important for a contribution in the formation of uniqueness of space, very often cannot be expressed just by means of architecture.
-Graphics and typography which are used in the build environment become a specific marks of places. In addition to the inherent utilitarian purposes of architecture, graphic design can express a significant existential and mental task. It is
-able to domesticate man-made structures for human occupation by turning anonymous and uniforms spaces into distinct places of human significance.</p>
+<div name="menu4" id="menuSmall4" class="nameChapter">Architectural specifications</div>
+    <div class="chapterSSS" id="chapter2">
+
+      <p class="columnCenter">
+      <a href="javascript:unhide('chapterTwo1');" class="LinkInText" class="click">
+    Architecture </a> </br> <span class="hidden" id="chapterTwo1">
+    <span>of modernism abandoned a tradition of iconology in which painting, sculpture, and graphics were combined with architecture. It mainly provides an architectural message. The diminutive signs in the most modern buildings contained only the most necessary messages, like street indicators and so on, minor accents decently applied.</span>
+
+    <span class="otherParagraphs">Viewed in this light, the role of the designer acquires an important dimension. It is not to create facades or architectural mass but to create settings for a totally harmonious life experience. Architecture is the articulation of space so as to produce a definite space experience in relation to previous and anticipated space experiences. It should create conditions for a satisfying state of human and community.</span></span>
+    </p>
+    
+
+  <p class="columnLeft">
+      <a href="javascript:unhide('chapterTwo2');" class="LinkInText" class="click">
+    DUCK </a> </br> <span class="hidden" id="chapterTwo2">
+    <span>In case, the architectural systems of space, structure, and program are submerged and distorted by an overall symbolic form, this kind of building-becoming-structure authors called the DUCK in honor of duck-shaped drive-in “The Long Island Duckling”. They are buildings that can’t be anything but what they are as their shape foretells the activity taking place inside. They do not require signs, often blurring the line between building and sculpture. Ducks have innate ornamentation and are straightforward and honest in their intentions. What you see is what you get, and what you get is what you would expect.</span>
+
+    <span class="otherParagraphs">This sort of building became a characteristic feature of the transformation of architecture in the time of high modernism and so-called international style. The buildings of this period were separated from its surrounding context. They became break points in the fabric of the traditional city and its older neighborhood culture. Unlike one of the main characteristic of postmodernism is the erasure of the border between high culture and so-called mass and commercial culture. In this setting the other kind of buildings became more common.</span></span>
+    </p>
+
+  <p class="columnRight">
+    <a href="javascript:unhide('chapterTwo3');" class="LinkInText" class="click">
+    DECORATED SHED </a> </br> <span class="hidden" id="chapterTwo3">
+    <span>Where systems of space and structure are directly at the service of program, and ornament is applied independently of them. Venturi and co-authors called this the DECORATED SHED.
+    Decorated shed carries a connection between modernist architecture and historical associations. Modernist architects are too convinced that form can exist out of any historical or cultural frame. And that these abstract forms can affect person just by mean of mass and space. However examples of different perception of the same forms, symbols and objects in different cultures can prove that it is difficult to create something universal and out of any context. It is hard to rely just on the physiological features of humans in order to build any elaborative architectural structure. In its turn decorated shed is a generic structure with a purpose identifiable only by its signage. In fact, decorated sheds could not exist without signs and other applied ornamentation. Unlike ducks, they are not symbols themselves, but require applied symbols.
+    </span>
+
+    <span class="otherParagraphs">Implicit in the pure architectural forms of “duck” is a symbolism different from the applique ornament of “decorated shed” with its explicit associations.
+      <a href="javascript:unhide('source8');"class="click"><sup>8</sup></a>
+    <span class="hidden" id="source8"><span class="source">Learning from Las Vegas: The Forgetten Symbolism of Architectural Form. Robert Venturi, Denise Scott Brown, Steven Izenour. The MIT Press, Cambridge, Massachusetts, and London, England. 1997</span></span>
+      The viewers read the implicit symbolism of “duck” through the undecorated physiognomy of building. In order to do it, they should use their associations and past experience. However, the abstract expressionistic messages of “decorated shed” can be perceived through the inherent physiognomic characteristics of its forms–size, texture, color, and additional elements as signs or lettering.</span>
+
+    <span class="otherParagraphs">Such type of building as “decorated shed” often “exists” if there are some distinguished elements on them. They exist only if there are symbols/elements which differ them from other buildings. By definition they are as white and blank as a white sheet of paper lying in front of a writer. They are neutral and silent before a writer will bring it into life.</span>
+
+    <span class="quote">“If you can take the sign away, there is no place.” – Robert Ventury, Steven Izenour and Denise Scott Brown. Learning from Las Vegas.</span></span></span>
+    </p>
+
+    <p class="columnCenter">
+    <a href="javascript:unhide('chapterTwo4');" class="LinkInText" class="click">
+    Modern </a> <span class="hidden" id="chapterTwo4">
+    <span>built environment is mainly constructed out of buildings which we bravely can refer to as “decorative shed”. However, build settings have meaning, and matter to people only when it is experienced, when all human’s senses are simultaneously engaged in its inhabitation, and when it provides conditions in which the acts and rituals of daily life take place. Therefore it is important to realize the significant contribution of additional visual elements to the creation of a comfortable living environment. In order to distinguish lived space (space which is comfortable to be in) from physical and geometrical space, we can use the term existential space.
+    </span>
+  </p>
+
+<p class="columnCenter">
+    <a href="javascript:unhide('chapterTwo5');" class="LinkInText" class="click">
+    <span style ="line-height: 7vw">Existential space </span></a> </br><span class="hidden" id="chapterTwo5">
+    <span>is always a unique situational space interpreted through the person’s memory and intentionality.
+      <a href="javascript:unhide('source9');"class="click"><sup>9</sup></a>
+    <span class="hidden" id="source9"><span class="source">Robert McCarter, Juhabi Pallasmaa. Understanding Architecture, Phaidon Press Limited 2012, China (first printed)</span></span>
+
+      This is something which appears only by a perception of people who live in this space and experience it. The whole lived experiential world is a mosaic of places, next to and nested inside each other; it is not a continuous, unstructured and homogeneous space devoid of meanings. The experience of place is fundamental for our mental constitution and environmental perception, as well as for our innate structuring of the world.
+    </span>
+
+     <span class="otherParagraphs">According to psychologist Gabriel Moser the relation between individual and environment may be approached depending on four different levels of space and time references:</span></br>
+     
+
+
+            <span class="listFirst"><img src="images/underline.PNG" alt="ppp" >The micro environment of housing and personal space;</span></br>
+           
+            <span class="list"><img src="images/underline.PNG" alt="ppp">Proximity environments, described as a semi-public shared space, such as neighborhoods, parks, work environments, hospitals, schools, libraries and so on;</span></br>
+           
+            <span class="list"><img src="images/underline.PNG" alt="ppp" >General public environments such as villages and cities;</span></br>
+           
+            <span class="listLast"><img src="images/underline.PNG" alt="ppp" > The global environment, including the world in its entirety.</span></br>
+           
+
+        </span></span>
 
 
 
-</div>
 
-<div id="footnote" >
-<h1>Footnotes</h1>
-<!--1. <a href="http://remixtheory.net/?page_id=3" target="blank">http://remixtheory.net/?page_id=3</a><a name="fn1" href="#fr1"> ↩</a><br>
-2. <a href="http://www.encyclo.nl/begrip/authentiek" target="blank">http://www.encyclo.nl/begrip/authentiek</a><a name="fn2" href="#fr2"> ↩</a><br>
+    
+  </p>
+    
+
+      
+                                     
+
+    </div> 
+
+
+<div name="menu5" id="menuSmall5" class="nameChapter">Typography and identity</div>
+    <div class="chapterSSS" id="chapter3">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+<div name="menu6" id="menuSmall6" class="nameChapter">The role of typography</div>
+    <div class="chapterSSS" id="chapter4">
+       <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+<div name="menu7" id="menuSmall7" class="nameChapter">History and categorization</div>
+     <div class="chapterSSS" id="chapter5">
+       <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+     </div>
+
+
+
+<div name="menu8" id="menuSmall8" class="nameChapter">Supergraphics</div>
+    <div class="chapterSSS" id="chapter6">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+
+<div name="menu9" id="menuSmall9" class="nameChapter">Directional typography</div>
+    <div class="chapterSSS" id="chapter7">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+
+<div name="menu10" id="menuSmall10" class="nameChapter">Conclusion</div>
+    <div class="chapterSSS" id="conclusion">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+<div name="menu11" id="menuSmall11" class="nameChapter">Footnotes</div>
+    <div class="chapterSSS" id="footnotes" >
+<!--1. <a href="http://remixtheory.net/?page_id=3" target="blank">http://remixtheory.net/?page_id=3</a><a name="fn1" href="#fr1"> ↩</a><br>-->
+<!--2. <a href="http://www.encyclo.nl/begrip/authentiek" target="blank">http://www.encyclo.nl/begrip/authentiek</a><a name="fn2" href="#fr2"> ↩</a><br>
 3. <a href="http://vorige.nrc.nl/krant/article1638545.ece" target="blank">http://vorige.nrc.nl/krant/article1638545.ece</a> <a name="fn3" href="#fr3"> ↩</a><Br>
 4. idem<a name="fn4" href="#fr4"> ↩</a>-->
+    </div>
 
-</div>
 
-<div class="footer">
-<a href="#menu0" name="m0">Homepage</a><br>
-</div>
-                </body>
-            </html>
+
+<div id="menuSmall12" class="nameChapter">Acknowledgement</div>
+    <div class="chapterSSS" id="acknowledgement">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+
+<div id="menuSmall13" class="nameChapter">About</div>
+    <div class="chapterSSS" id="about">
+      <p>hhcfbfjkgkjfhgkfhslkfgkdhgahgklhgdfhgklfdhgklsdfhgkldfhgsfhgsld</p>
+    </div>
+
+
+
+   <div class="footer">
+      <!-- <a href="#menu0" name="m0">Top</a><br>  -->   
+      <a href="" onClick="window.print ()" value="print">Print thesis</a>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
