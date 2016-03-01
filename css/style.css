@@ -6,7 +6,6 @@ margin-bottom: 0px;
 margin-right: 0px;
 margin-left: 0px;
 background: black;
-<<<<<<< HEAD
 
 /*background: black; /* For browsers that do not support gradients */
 /*  background: -webkit-radial-gradient(blue,black,black); /* Safari 5.1 to 6.0 */
@@ -248,9 +247,6 @@ font-family:  "DTLNobelT-Bold", sans-serif;
 /*font-family:  "Animo", sans-serif;*/
 /*font-family:  "Roboto", sans-serif;*/
 hyphens: manual;
-=======
-font-size: 100%;
->>>>>>> origin/gh-pages
 }
 
 
@@ -306,7 +302,6 @@ border-bottom: 0.4vw solid white;
 z-index: 95;
 }
 
-<<<<<<< HEAD
 .myName{
 
 
@@ -350,18 +345,6 @@ background: black;
 border-bottom: 0.4vw solid white;
 
 z-index: 11;
-=======
-#containerMenu {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/*MENU PROPERTIES AT THE BOTTOM NEXT TO LINKS*/
-
-
-
->>>>>>> origin/gh-pages
 }
 
 
@@ -382,28 +365,7 @@ z-index: 11;
 }
 
 #abstract{
-<<<<<<< HEAD
 
-=======
-	
-	width: 80%;
-<<<<<<< HEAD
-	position: relative;
-	/*margin-top: 30vh;
-	margin-right:auto;
-    margin-left: auto;	
-    margin-bottom: 80px;*/	
-=======
-	margin-top: 40vw;
-	margin-right:auto;
-    margin-left: auto;	
-    margin-bottom: 80px;	
->>>>>>> origin/gh-pages
-	font-family: 'Montserrat', sans-serif;	
-	font-size: 2vw;
-	letter-spacing:1px;
-	line-height: 2vw;
->>>>>>> origin/gh-pages
 }
 
 #introduction{	
@@ -845,10 +807,6 @@ sup {
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/gh-pages
 
 
 
@@ -876,213 +834,15 @@ sup {
 
 	
 
-<<<<<<< HEAD
-=======
-p { 
-	text-indent: 30px;
-	color: #ffffff;
- }
-	 
->>>>>>> origin/gh-pages
-
-
-
-<<<<<<< HEAD
-=======
-	letter-spacing:1px;
-	text-align: center;
-	color: #ffffff;
->>>>>>> origin/gh-pages
-
-
-<<<<<<< HEAD
-
-=======
-h2 {
-	font-size: 80px;
-	line-height: 68pt;
-	font-weight: normal;
-	letter-spacing:1px;
-	text-align: center;
-	color: #ffffff;
-}
-
-h3 {
-	font-size: 16px;
-	width: 600px;
-	margin-left: auto;	
-	margin-right: auto;	
-	line-height: 18pt;
-	font-weight: bold;
-	letter-spacing:1px;
-	text-align: center;
-	color: #ffffff;
-}
->>>>>>> origin/gh-pages
-
-
-<<<<<<< HEAD
-
-=======
-
-
-
-.menu{
-font-family: 'Montserrat', sans-serif;	
-hyphens: manual;
-position: relative;
-top: 10px;
-text-align: left;
-text-transform: uppercase;
-left:0px;
-width: 100%;
-font-size: 4.7vw;
-line-height: 1.3;
-letter-spacing: 0.04em;
-padding-left: 15px;
-z-index:10;
-}
-
-chapMenu {
-	font-size: 0.8vw;
-	text-transform: uppercase;
-	margin-right:5px;
-
-}
-
-space{
-	padding-left:7vw;
-	
-}
-
-chapMenu1 {
-	font-size: 1vw;
-	/*margin-right:5px;
-	margin-left: 2.5vw;*/
-}
-
-/*.space{
-position: inline;
-word-spacing: 1vw;
-
-border-style: solid;
-border-width: 2px;
-border-color: #ffffff;
-}*/
-
-/*.Space{
-float: right;
-width:900px;
-border-bottom-style: solid;
-border-bottom-width: 1px;
-border-bottom-color: #ffffff;	
-}*/
-
-
-<<<<<<< HEAD
-a.one:link {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right:0vw;
-    /*text-decoration: underline;*/
-    border-bottom-style: solid;
-	border-bottom-width: 0.3vw;
-	border-bottom-color: #ffffff;
-}
-
-=======
->>>>>>> origin/gh-pages
-a:link {
-    color: #ffffff;
-    text-decoration: none;
-    margin-right:0vw;
-<<<<<<< HEAD
-    
-=======
-    border-bottom-style: solid;
-border-bottom-width: 0.3vw;
-border-bottom-color: #ffffff;
->>>>>>> origin/gh-pages
-}
 
 
 
 
-/* visited link */
-a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
->>>>>>> origin/gh-pages
 
 
-<<<<<<< HEAD
-
-=======
-/* selected link */
-a:active {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-::-moz-selection {
-    background-color: #00ffcc;
-    color: #000;
-}
- 
-::selection {
-    background-color: #00ffcc;
-    color: #000;
-}
 
 
-/*ATTEMPT TO DRAW THE LINE*/
-/*hr { 
-    display: block;
-    align:right;
-    margin-top: 0.5em;
-   	margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ffffff;
-   }*/
 
 
-.hidden { display: none; }
-.unhidden { display: inline; }
 
 
-.right{
-	width: 50vw;
-	display: block;
-	padding: 1vw;
-	border-style: solid;
-	border-width: 0px 1px 1px 0px;
-	border-color: #ffffff;
-	margin-left:20vw;
-}
-
-.left{
-	width: 50vw;
-	display: block;
-	padding: 1vw;
-	border-style: solid;
-	border-width: 0px 0px 1px 1px;
-	border-color: #ffffff;
-	margin-left:0vw;
-<<<<<<< HEAD
-}
-
-#underline{
-text-decoration: none; 
-background: url(images/underline.gif) repeat-x 100% 100%;
-padding-bottom: 4px;
-white-space: nowrap;
-=======
-	
-
->>>>>>> origin/gh-pages
-}
->>>>>>> origin/gh-pages
