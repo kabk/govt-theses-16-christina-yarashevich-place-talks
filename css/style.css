@@ -912,7 +912,12 @@ sup {
     font-size: 1vw;
 }
 
+.sourceItalic{
+	color:white;
+	font-family: 'DTLNobelT-Italic', sans-serif;
 
+
+}
 
 .source{
 	position:relative;
