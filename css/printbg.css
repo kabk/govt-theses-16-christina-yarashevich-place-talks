@@ -2,15 +2,59 @@
 @page {
     size: A4;
     margin-left: 20mm;
-    margin-bottom:15mm;
+    margin-bottom:10mm;
     margin-top:10mm;
-    margin-right: 5mm;
-    width:160%;
+    margin-right: 15mm;
+    width:100%;
 }
+
+@top-center {
+  color: black;
+    font-family: sans-serif;
+    font-size: 2em;
+    content: counter(page);
+  }
+
+p { 
+  color: black;
+   page-break-inside: avoid;
+ }
+
+.part {
+    page-break-before: always;
+}
+
+.page-break-before {
+    page-break-before: always;
+}
+
+.page-break-after {
+    page-break-after: always;
+
+
+}
+
+
+.columnRight{ page-break-inside: avoid; page-break-after: always;color:black;border-color: black; float:none;}
+.columnCenter{ page-break-inside: avoid; page-break-after: always;color:black;border-color: black;float:none;}
+.columnLeft{ page-break-inside: avoid; page-break-before: always; color:black;border-color: black;float:none;}
+
+
+
+/*.quote{page-break-after: always;}*/
+
+.imageRightPORT{page-break-inside: avoid; page-break-before: always;}
+.imageRightLAND{page-break-inside: avoid; page-break-before: always;}
+.imageLeftPORT{page-break-inside: avoid; page-break-before: always;}
+.imageLeftLAND{page-break-inside: avoid; page-break-before: always;}
+
+
 
 #containerMenu {
   position: relative;
   top: 0;
+  margin-bottom: 0;
+  page-break-after: always;
   z-index: 1000;
 }
 
@@ -51,19 +95,65 @@
 .list{color:black;}
 
 .menu{
+  font-family:"DTLNobelT-Bold", sans-serif;
   position: relative;
-  top: 0;
+  top: 1cm;
+  font-size: 7vw;
+  margin-bottom: 0;
   color: black;
+
   z-index: 1000;
+  page-break-after: always;
+
 }
 
 chapMenu{color:black;}
 
-a:link{color: black;}
+a:link{color: black;
+font-family:"DTLNobelT-Bold", sans-serif;}
+a:visited {
+    color: black;
+font-family:"DTLNobelT-Bold", sans-serif;
+}
+a:hover {
+  color: black;
+font-family:"DTLNobelT-Bold", sans-serif;    
+}
+
+a:active {
+    color: black;
+font-family:"DTLNobelT-Bold", sans-serif;
+}
+
+::-moz-selection {
+    color: black;
+font-family:"DTLNobelT-Bold", sans-serif;
+}
+ 
+::selection {
+    color: black;
+font-family:"DTLNobelT-Bold", sans-serif;
+}
+
+
+
+
+
+
+a.LinkInText{ font-family:"DTLNobelT-Bold", sans-serif; page-break-inside: avoid; page-break-before: always;}
+
+.LinkTOP{color:black;}
+
+.imageLink{display:none;}
+
 
 .imageRightPORT{ border-color: black;}
 .imageRightLAND{ border-color: black;}
-.imageLeftPORT{ border-color: black;}
+.imageLeftPORT{ 
+  border-color: black;
+  /*-webkit-filter: grayscale(0);
+  filter: grayscale(0);*/
+}
 .imageLeftLAND{ border-color: black;}
 
 
@@ -81,10 +171,14 @@ a:link{color: black;}
 
 
 
-.nameChapter{color:black;}
+.nameChapter{color:black;
+margin-top: 0cm;
+padding-top: 0cm;}
 
 .chapterSSS{
-  
+  font-size: 2vw;
+  line-height: 2.8vw;
+
   color: black;
 }
 
@@ -92,15 +186,47 @@ a:link{color: black;}
 .columnCenter{border-color:black;}
 .columnLeft{border-color:black;}
 
-p { 
-  color: black;
- }
+
 .otherParagraphs{ 
   color: black;}
 
-.quote{color: black; border-color:black;}
+.quote{
+
+  font-size: 2.5vw;
+  line-height: 3.5vw;
+
+  color: black; border-color:black;}
 
 .captionRightPORT{color: black; border-color: black;}
 .captionRightLAND{color: black; border-color: black;}
 .captionLeftPORT{color: black; border-color: black;}
 .captionLeftLAND{color: black; border-color: black;}
+
+i{color:black;}
+
+#acknowledgement{
+  display:inline-block; 
+  page-break-inside: avoid; 
+  page-break-before: always;}
+
+  .sourceChapter{
+  position:relative;
+  display: inline;
+  float: left;
+  width: 50vw;
+  padding-top: 1.5vw;
+  padding-bottom:1.5vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
+  color: white;
+  font-size: 1.4vw;
+  line-height: 2vw;
+  border-style: solid;
+  border-width:  0 0 0 0.2vw;
+  border-color: #ffffff;
+  z-index: 23;
+
+}
