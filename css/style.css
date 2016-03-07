@@ -935,7 +935,7 @@ sup {
 	font-size: 1vw;
 	line-height: 1.4vw;
 	border-style: solid;
-	border-width: 2px 0px 2px 0px;
+	border-width: 0.2vw 0 0.2vw 0;
 	border-color: #ffffff;
 	z-index: 23;
 
